@@ -7,12 +7,14 @@ destination: build
 assets:
   cachebust: soft
 
+highlighter: pygments
+
 # Site settings
-title: Proteus
-description: Prototyping starter kit for Jekyll
+title: Jef See Designs
+description: Agile, Resonsive, Manageable Web Tools
 
 # Name of project on Github
-baseurl: /proteus-jekyll
+baseurl: /see-designs
 
 # Build settings
 markdown: kramdown

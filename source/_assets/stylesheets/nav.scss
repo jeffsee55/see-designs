@@ -1,0 +1,40 @@
+.nav {
+  position: absolute;
+  z-index: 40;
+  top: 0; right: 0; left: 0;
+  color: $blue;
+  padding: 20px 0;
+  .wrapper {
+    @include outer-container;
+    background: white;
+    .logo {
+      float: left;
+      padding: 10px 5px 10px 15px;
+      letter-spacing: 2px;
+      .see {
+        font-weight: 900;
+        color: $blue;
+      }
+      .designs {
+        color: $blue;
+      }
+    }
+    .menu {
+      float: right;
+      li {
+        display: inline-block;
+        margin-left: 30px;
+        padding: 10px 5px 10px 15px;
+        &:hover {
+          h5 {
+            font-weight: 400;
+          }
+        }
+        h5 {
+          letter-spacing: 2px;
+          color: $blue;
+        }
+      }
+    }
+  }
+}

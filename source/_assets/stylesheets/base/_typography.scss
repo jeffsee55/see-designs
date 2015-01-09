@@ -1,7 +1,7 @@
 body {
   -webkit-font-smoothing: antialiased;
   background-color: $base-background-color;
-  color: $base-font-color;
+  color: white;
   font-family: $base-font-family;
   font-size: $base-font-size;
   line-height: $base-line-height;
@@ -15,7 +15,10 @@ h5,
 h6 {
   font-family: $header-font-family;
   line-height: $header-line-height;
+  font-weight: $header-font-weight;
+  color: $header-font-color;
   margin: 0;
+  letter-spacing:$header-letter-spacing;
   text-rendering: optimizeLegibility; // Fix the character spacing for headings
 }
 
