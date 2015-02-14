@@ -1,0 +1,7 @@
+<h3>RELATED POSTS</h3>
+<hr>
+{% for post in site.posts %}
+<a href="{{ site.baseurl }}{{ post.url}}">
+  <h5>{{ post.title }}</h5>
+</a>
+{% endfor %}

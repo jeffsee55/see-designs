@@ -1,39 +1,48 @@
 .nav {
   position: absolute;
-  z-index: 40;
-  top: 0; right: 0; left: 0;
-  color: $blue;
-  padding: 20px 0;
-  .wrapper {
-    @include outer-container;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  .button, .exit {
+    position: fixed;
+    right: 0.5em;
+    top: 0.5em;
+    z-index: 60;
+    color: $blue;
+    font-size: 2em;
+    font-weight: 300;
+    padding: 0.2em 0.5em;
     background: white;
-    .logo {
-      float: left;
-      padding: 10px 5px 10px 15px;
-      letter-spacing: 2px;
-      .see {
-        font-weight: 900;
-        color: $blue;
-      }
-      .designs {
-        color: $blue;
-      }
+  }
+}
+.menu {
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background: transparentize(white, 0.1);
+  text-align: center;
+  display: none;
+  cursor: pointer;
+  .exit {
+    font-weight: 900;
+    background: none;
+  }
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    li {
+      display: block
     }
-    .menu {
-      float: right;
-      li {
-        display: inline-block;
-        margin-left: 30px;
-        padding: 10px 5px 10px 15px;
-        &:hover {
-          h5 {
-            font-weight: 400;
-          }
-        }
-        h5 {
-          letter-spacing: 2px;
-          color: $blue;
-        }
+    a {
+      text-align: center;
+      font-size: 4em;
+      color: $blue;
+      &:hover {
+        padding: 15px;
+        background: $blue;
+        color: white;
       }
     }
   }

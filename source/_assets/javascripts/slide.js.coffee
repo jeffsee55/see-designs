@@ -1,4 +1,11 @@
 $ ->
+  $('.banner').unslider(
+    keys: true,
+    dots: true,
+    delay: 5000,
+    fluid: true
+  )
+
   n = 0
   i = 0
   $('.left').click ->
@@ -10,33 +17,33 @@ $ ->
       i = Math.abs(n % 3)
     console.log(i)
     if i == 1
-      $(".block-1").animate({
+      $(@).siblings(".block-1").animate({
         left: "-150%"
       })
-      $(".block-2").animate({
+      $(@).siblings(".block-2").animate({
         left: "50%"
       })
-      $(".block-3").animate({
+      $(@).siblings(".block-3").animate({
         left: "150%"
       })
     else if i == 2
-      $(".block-1").animate({
+      $(@).siblings(".block-1").animate({
         left: "-250%"
       })
-      $(".block-2").animate({
+      $(@).siblings(".block-2").animate({
         left: "-150%"
       })
-      $(".block-3").animate({
+      $(@).siblings(".block-3").animate({
         left: "50%"
       })
     else if i == 0
-      $(".block-1").animate({
+      $(@).siblings(".block-1").animate({
         left: "50%"
       })
-      $(".block-2").animate({
+      $(@).siblings(".block-2").animate({
         left: "150%"
       })
-      $(".block-3").animate({
+      $(@).siblings(".block-3").animate({
         left: "250%"
       })
   $('.right').click ->
@@ -44,32 +51,32 @@ $ ->
     i = Math.abs(n % 3)
     console.log(i)
     if i == 1
-      $(".block-1").animate({
+      $(@).siblings(".block-1").animate({
         left: "-150%"
       })
-      $(".block-2").animate({
+      $(@).siblings(".block-2").animate({
         left: "50%"
       })
-      $(".block-3").animate({
+      $(@).siblings(".block-3").animate({
         left: "150%"
       })
     else if i == 2
-      $(".block-1").animate({
+      $(@).siblings(".block-1").animate({
         left: "-250%"
       })
-      $(".block-2").animate({
+      $(@).siblings(".block-2").animate({
         left: "-150%"
       })
-      $(".block-3").animate({
+      $(@).siblings(".block-3").animate({
         left: "50%"
       })
     else if i == 0
-      $(".block-1").animate({
+      $(@).siblings(".block-1").animate({
         left: "50%"
       })
-      $(".block-2").animate({
+      $(@).siblings(".block-2").animate({
         left: "150%"
       })
-      $(".block-3").animate({
+      $(@).siblings(".block-3").animate({
         left: "250%"
       })

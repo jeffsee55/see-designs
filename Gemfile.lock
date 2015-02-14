@@ -17,6 +17,8 @@ GEM
     execjs (2.2.2)
     fast-stemmer (1.0.2)
     ffi (1.9.6)
+    font-awesome-sass (4.2.2)
+      sass (~> 3.2)
     haml (4.0.5)
       tilt
     hike (1.2.3)
@@ -105,6 +107,7 @@ PLATFORMS
 DEPENDENCIES
   bourbon
   coffee-script
+  font-awesome-sass (~> 4.2.0)
   jekyll
   jekyll-assets
   jekyll-haml

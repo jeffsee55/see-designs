@@ -1,0 +1,13 @@
+---
+layout: blog_index
+---
+
+%h1 Blog
+%hr
+.card
+  {% for post in site.posts %}
+  %a(href="{{ site.baseurl }}{{ post.url}}")
+    %h3 {{ post.title }}
+    %em {{ post.date | date: "%B %e, %Y" }}
+    %p {{ post.body }}
+  {% endfor %}
