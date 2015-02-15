@@ -8,96 +8,94 @@ layout: default
     .white
     %img{src:"{{ site.baseurl }}{% asset_path 'logo.png' %}", style:"background: url('{{ site.baseurl }}{% asset_path 'code.png' %}') no-repeat top center fixed; background-attachment: fixed;  background-size: cover"}
 #tagline.block
-  .center
-    %h1(data-bottom-center="filter: blur(3px);" data-center-center="filter: blur(0px);" data-top-center="filter: blur(3px);") AGILE, RESPONSIVE, MANAGEABLE TOOLS TO FIT YOUR NEEDS
-#slide.block
-  .left
-  .right
-  .slide-block.block-1
-    :markdown
-      ![image]({{ site.baseurl }}{% asset_path 'responsive.png' %})
-
-      # MOBILE-FRIENDLY DESIGN
-      Squinting, panning, and zooming to see a mobile site is *so* 2010.
-      With the growth in reliability on mobile search and browsing, a
-      mobile-friendly solution is increasingly important for any business.
-      A fully-responsive website allows for efficient scaling to any screen
-      size from a single codebase, which ensures that all of your website traffic
-      will get the same great browsing experience.
-  .slide-block.block-2
-    :markdown
-      ![image]({{ site.baseurl }}{% asset_path 'easy-cms.png' %})
-
-      # EASY CONTENT-MANAGEMENT
-      A content management system is a web application that makes it possible to
-      edit, update and manage your website without needing to know how to code.
-      With a fully-customized CMS, posting blogs and updates can be done in seconds.
-      You can manage e-commerce, view website analytics, and even post directly to social
-      media from the convenience of your CMS dashboard.
-  .slide-block.block-3
-    :markdown
-      ![image]({{ site.baseurl }}{% asset_path 'mock-brand.png' %})
-
-      # MARKETING TOOLS
-      No need to stop with the web. A strong brand is one that is communicated consistently
-      across all media. Ensure that your brand is a complete representation of your enterprise
-      and speaks clearly to your customers. From business cards and brochures to packaging and
-      letterhead, I can help you achieve the look you’ve always envisioned for your brand.
+  .center.blur
+    %h1 AGILE, RESPONSIVE, MANAGEABLE TOOLS TO FIT YOUR NEEDS
+#slide.block.features
+  .feature-banner
+    %ul
+      %li.block
+        %img.center-left{src:"{{ site.baseurl }}{% asset_path 'responsive-icon.png' %}"}
+        .center-right
+          %h1 MOBILE-FRIENDLY DESIGN
+          %hr.thick
+          :markdown
+            Squinting, panning, and zooming to see a mobile site is *so* 2010.
+            With the growth in reliability on mobile search and browsing, a
+            mobile-friendly solution is increasingly important for any business.
+            Make sure all of your visitors get the same great browsing experience with
+            a responsive solution.
+      %li.block
+        %img.center-left{src:"{{ site.baseurl }}{% asset_path 'cms-icon.png' %}"}
+        .center-right
+          %h1 EASY CONTENT-MANAGEMENT
+          %hr.thick
+          :markdown
+            A content management system is a web application that makes it possible to
+            edit, update and manage your website without needing to know how to code.
+            Fully-customized content management means less hassle for you and better content
+            for your customers.
+      %li.block
+        %img.center-left{src:"{{ site.baseurl }}{% asset_path 'brand-icon.png' %}"}
+        .center-right
+          %h1 MARKETING TOOLS
+          %hr.thick
+          :markdown
+            No need to stop with the web. A strong brand is one that is communicated consistently
+            across all media. Ensure that your brand is a complete representation of your enterprise
+            and speaks clearly to your customers.
 #philosophy.block
-  .center
+  .center.blur
     %h1 DESIGN & VALUE
+    %hr.thick-inverse
     :markdown
-      Communicating value should be every enterprise’s primary goal. If only you had 5 minutes
-      to sit down with each customer and explain the merits of your product - but you don’t! No
-      matter what you’re selling, you need to communicate quickly and effectively, to everyone.
-      Design is a snapshot of value, and with a thoughtful approach to the way the web is used and
-      interpreted, functional design can tell your story in seconds. Whether you’re the owner of a
-      restaraunt, a local boutique, a club, or perhaps you’re interested in entering the world of
-      e-commerce, I can help you communicate your value effectively.
+      Design is a snapshot of value, and with a thoughtful
+      approach to the way the web is used and interpreted, functional design can tell your story
+      in seconds. From restaraunts to e-commerce, I can help you communicate your value effectively.
 #portfolio
   .banner
     %ul
       %li.block
-        %img{src:"{{ site.baseurl }}{% asset_path 'tennis/mockup.png' %}"}
+        %img.center-left{src:"{{ site.baseurl }}{% asset_path 'real-org/real-org-tall.png' %}"}
         .center-right
-          %h1 Gregson's Tennis Advantage
+          %h1 THE REALISTIC ORGANIZER
+          %hr.thick
           :markdown
-            Communicating value should be every enterprise’s primary goal. If only you had 5 minutes
-            to sit down with each customer and explain the merits of your product - but you don’t! No
-            matter what you’re selling, you need to communicate quickly and effectively, to everyone.
-            Design is a snapshot of value, and with a thoughtful approach to the way the web is used and
-            interpreted, functional design can tell your story in seconds. Whether you’re the owner of a
+            Whether you’re the owner of a
             restaraunt, a local boutique, a club, or perhaps you’re interested in entering the world of
             e-commerce, I can help you communicate your value effectively.
       %li.block
-        %img{src:"{{ site.baseurl }}{% asset_path 'bohokitty/mockup.png' %}"}
+        %img.center-left{src:"{{ site.baseurl }}{% asset_path 'tennis/tennisadvantage-tall.png' %}"}
         .center-right
-          %h1 BohoKitty
+          %h1 GREGSON'S TENNIS ADVANTAGE
+          %hr.thick
           :markdown
-            Communicating value should be every enterprise’s primary goal. If only you had 5 minutes
-            to sit down with each customer and explain the merits of your product - but you don’t! No
-            matter what you’re selling, you need to communicate quickly and effectively, to everyone.
-            Design is a snapshot of value, and with a thoughtful approach to the way the web is used and
-            interpreted, functional design can tell your story in seconds. Whether you’re the owner of a
+            Whether you’re the owner of a
             restaraunt, a local boutique, a club, or perhaps you’re interested in entering the world of
             e-commerce, I can help you communicate your value effectively.
       %li.block
-        %img{src:"{{ site.baseurl }}{% asset_path 'runfurman/mockup.png' %}"}
+        %img.center-left{src:"{{ site.baseurl }}{% asset_path 'bohokitty/bohokitty-tall.png' %}"}
         .center-right
-          %h1 RunFurman
+          %h1 BOHOKITTY
+          %hr.thick
           :markdown
-            Communicating value should be every enterprise’s primary goal. If only you had 5 minutes
-            to sit down with each customer and explain the merits of your product - but you don’t! No
-            matter what you’re selling, you need to communicate quickly and effectively, to everyone.
-            Design is a snapshot of value, and with a thoughtful approach to the way the web is used and
-            interpreted, functional design can tell your story in seconds. Whether you’re the owner of a
+            Whether you’re the owner of a
+            restaraunt, a local boutique, a club, or perhaps you’re interested in entering the world of
+            e-commerce, I can help you communicate your value effectively.
+      %li.block
+        %img.center-left{src:"{{ site.baseurl }}{% asset_path 'runfurman/runfurman-tall.png' %}"}
+        .center-right
+          %h1 RUNFURMAN
+          %hr.thick
+          :markdown
+            Whether you’re the owner of a
             restaraunt, a local boutique, a club, or perhaps you’re interested in entering the world of
             e-commerce, I can help you communicate your value effectively.
 
 
 #contact.block
-  .center
+  .center.blur
     %h1 CONTACT
+    %hr.thick-inverse
     %p When not in front of my computer I spend my hours running on the roads of upstate South Carolina, training for the 2016 Olympics. After having come within a few spots of making it to London in 2012, I’ve become even more committed to that goal. Web design and running are my yin and yang and I am continually approaching each with excitement and enthusiasm.
     %a{href: "mailto:jeffsee.55@gmail.com?Subject=Contact%20See%20Designs", target: "top"}
       .mail-to SEND ME A MESSAGE

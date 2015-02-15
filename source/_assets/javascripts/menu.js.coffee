@@ -10,5 +10,5 @@ $ ->
     $('.nav span').fadeIn()
     $("html, body").animate
       scrollTop: $($.attr(this, "href")).offset().top
-    , 500
+    , 700
     false

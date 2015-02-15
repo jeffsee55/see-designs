@@ -1,8 +1,8 @@
 $ ->
-  $('.banner').unslider(
+  $('.banner, .feature-banner').unslider(
     keys: true,
     dots: true,
-    delay: 5000,
+    delay: 1000000,
     fluid: true
   )
 

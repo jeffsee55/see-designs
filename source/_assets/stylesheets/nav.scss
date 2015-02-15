@@ -9,7 +9,7 @@
     right: 0.5em;
     top: 0.5em;
     z-index: 60;
-    color: $blue;
+    color: $base-accent-color;
     font-size: 2em;
     font-weight: 300;
     padding: 0.2em 0.5em;
@@ -38,10 +38,9 @@
     a {
       text-align: center;
       font-size: 4em;
-      color: $blue;
+      color: $base-accent-color;
       &:hover {
-        padding: 15px;
-        background: $blue;
+        text-decoration: underline;
         color: white;
       }
     }

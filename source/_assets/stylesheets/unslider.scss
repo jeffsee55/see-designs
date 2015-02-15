@@ -1,3 +1,21 @@
-.banner { position: relative; overflow: auto; }
-.banner li { list-style: none; }
-.banner ul li { float: left; }
+.banner, .feature-banner { position: relative; overflow: auto; }
+.banner li, .feature-banner li { list-style: none; }
+.banner ul li, .feature-banner ul li { float: left; }
+
+.banner ul li {
+  img {
+    max-width: 55%;
+  }
+}
+// .banner .dots {
+//   position: absolute;
+//   bottom: 0;
+//   left: 0;
+//   right: 0;
+//   z-index: 1000;
+//   text-align: center;
+//   .dot {
+//     display: inline-block !important;
+//     color: $medium-gray;
+//   }
+// }

@@ -2,8 +2,8 @@
 $sans-serif: 'Lato', $helvetica;
 $serif: $georgia;
 $base-font-family: $sans-serif;
-$header-font-family: $base-font-family;
-$header-font-weight: 300;
+$header-font-family: 'Bitter';
+$header-font-weight: 400;
 $header-letter-spacing: 7px;
 
 // Font Sizes
@@ -25,9 +25,10 @@ $base-spacing: $base-line-height * 1em;
 $base-z-index: 0;
 
 // Colors
-$blue: #477DCA;
+$blue: #5f84dc;
+$salmon: #ff8787;
 $dark-gray: #333;
-$medium-gray: #999;
+$medium-gray: #828282;
 $mustard: #d5be2c;
 $light-gray: #DDD;
 $light-red: #FBE3E4;
@@ -38,12 +39,12 @@ $light-green: #E6EFC2;
 $base-background-color: white;
 
 // Font Colors
-$base-font-color: $blue;
-$base-accent-color: $blue;
-$header-font-color: $base-font-color;
+$base-font-color: $salmon;
+$base-accent-color: $salmon;
+$header-font-color: $salmon;
 
 // Link Colors
-$base-link-color: darken($blue, 20);
+$base-link-color: darken($base-accent-color, 20);
 $hover-link-color: darken($base-link-color, 15);
 $base-button-color: $base-link-color;
 $hover-button-color: $hover-link-color;
@@ -69,4 +70,4 @@ $form-font-size: $base-font-size;
 $form-font-family: $base-font-family;
 
 // Custom
-$block-height: 700px;
+$block-height: 400px;

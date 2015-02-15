@@ -5,6 +5,20 @@
   overflow: hidden;
 }
 
+.blur {
+  * {
+    @include filter(blur(3px));
+    @include transition(all 0.5s ease-in-out);
+  }
+}
+
+.unblur {
+  * {
+    @include filter(blur(0px));
+    @include transition(all 0.5s ease-in-out);
+  }
+}
+
 .center {
   position: absolute;
   top: 50%;
@@ -14,54 +28,30 @@
     color: white;
   }
 }
+
+.center-left {
+  position: absolute;
+  top: 60%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+}
+
 .center-right {
   position: absolute;
   top: 50%;
-  left: 75%;
-  transform: translate(-50%, -50%);
-  h1 {
-    color: $dark-gray;
+  left: 65%;
+  padding: 2em;
+  background: white;
+  transform: translate(-30%, -50%);
+}
+
+.features {
+  .center-left {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
   }
-}
-
-.left, .right {
-  position: absolute;
-  width: 20%;
-  z-index: 11;
-  cursor: pointer;
-  &:hover {
-    background: transparentize($dark-gray, 0.8);
-  }
-}
-
-.left {
-  left: 0;
-  top: 0;
-  bottom: 0;
-}
-
-.right {
-  right: 0;
-  top: 0;
-  bottom: 0;
-}
-
-.slide-block {
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.block-1 {
-  left: 50%;
-}
-
-.block-2 {
-  left: 150%;
-}
-
-.block-3 {
-  left: 250%;
 }
 
 #welcome {
@@ -79,7 +69,6 @@
       background: white;
       top: 0; right: 0; bottom: 0; left: 0;
       z-index: 25;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
     }
     img {
       position: relative;
@@ -89,12 +78,12 @@
 }
 
 #tagline {
-  background: $blue;
+  background: $base-accent-color;
 }
 
 #slide {
   h1, p {
-    color: $blue;
+    color: $medium-gray;
   }
   p {
     text-align: justify;
@@ -105,19 +94,19 @@
 }
 
 #philosophy {
-  background: $blue;
+  background: $base-accent-color;
   text-align: justify;
 }
 
 #portfolio {
   h1, p {
-    color: $blue;
+    color: $medium-gray;
     text-align: justify;
   }
 }
 
 #contact {
-  background: $blue;
+  background: $base-accent-color;
   text-align: justify;
   .mail-to {
     color: white;
