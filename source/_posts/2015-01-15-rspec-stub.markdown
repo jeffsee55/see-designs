@@ -2,7 +2,7 @@
 title:  "Stubbing with RSpec"
 date:   2014-10-22 17:26:19
 categories: code
-layout: post
+layout: default
 permalink: rspec
 ---
 
