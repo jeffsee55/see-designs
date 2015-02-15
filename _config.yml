@@ -14,7 +14,7 @@ title: Jeff See Designs
 description: Agile, Resonsive, Manageable Web Tools
 
 # Name of project on Github
-baseurl: /see-designs
+baseurl: /
 
 # Build settings
 markdown: kramdown
