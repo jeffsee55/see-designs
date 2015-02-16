@@ -1,19 +1,24 @@
 .nav {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 50;
+  z-index: 100;
   .button, .exit {
     position: fixed;
-    right: 0.5em;
-    top: 0.5em;
+    right: 0;
+    top: 0;
+    height: 10em;
+    width: 50em;
     z-index: 60;
     color: $base-accent-color;
     font-size: 2em;
     font-weight: 300;
     padding: 0.2em 0.5em;
-    background: white;
+  }
+  .inverse h5 {
+    z-index: 50;
+    color: white;
   }
 }
 .menu {

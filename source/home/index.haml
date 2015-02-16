@@ -1,16 +1,16 @@
 ---
 layout: default
 ---
-
-#welcome.block
+{% include nav.haml %}
+#welcome.block.dark-menu{style:"background: url('{{ site.baseurl }}{% asset_path 'fake-menu-dark.png' %}') no-repeat top right; background-attachment: fixed"}
   .overlay{style:"background: url('{{ site.baseurl }}{% asset_path 'code.png' %}') no-repeat center center fixed; background-attachment: fixed; background-size: cover"}
   .center
     .white
-    %img{src:"{{ site.baseurl }}{% asset_path 'logo.png' %}", style:"background: url('{{ site.baseurl }}{% asset_path 'code.png' %}') no-repeat top center fixed; background-attachment: fixed;  background-size: cover"}
-#tagline.block
+    %img{src:"{{ site.baseurl }}{% asset_path 'logo.png' %}", style:"background: url('{{ site.baseurl }}{% asset_path 'code.png' %}') no-repeat center center fixed; background-attachment: fixed; background-size: cover"}
+#tagline.block.light-menu{style:"background-image: url('{{ site.baseurl }}{% asset_path 'fake-menu-light.png' %}'); background-repeat: no-repeat; background-position: top right; background-attachment: fixed;"}
   .center.blur
     %h1 AGILE, RESPONSIVE, MANAGEABLE TOOLS TO FIT YOUR NEEDS
-#slide.block.features
+#slide.block.features.dark-menu{style:"background: url('{{ site.baseurl }}{% asset_path 'fake-menu-dark.png' %}') no-repeat top right; background-attachment: fixed"}
   .feature-banner
     %ul
       %li.block
@@ -55,7 +55,13 @@ layout: default
   .banner
     %ul
       %li.block
-        %img.center-left{src:"{{ site.baseurl }}{% asset_path 'real-org/real-org-tall.png' %}"}
+        .portfolio-img.center-left
+          %ul.browser-dots
+            %li.red.dots
+            %li.yellow.dots
+            %li.green.dots
+            %li.tab The Realistic Organizer
+          %img{src:"{{ site.baseurl }}{% asset_path 'real-org/real-org-tall.png' %}"}
         .center-right
           %h1 THE REALISTIC ORGANIZER
           %hr.thick
@@ -64,7 +70,13 @@ layout: default
             restaraunt, a local boutique, a club, or perhaps you’re interested in entering the world of
             e-commerce, I can help you communicate your value effectively.
       %li.block
-        %img.center-left{src:"{{ site.baseurl }}{% asset_path 'tennis/tennisadvantage-tall.png' %}"}
+        .portfolio-img.center-left
+          %ul.browser-dots
+            %li.red.dots
+            %li.yellow.dots
+            %li.green.dots
+            %li.tab Gregson's Tennis Advantage
+          %img{src:"{{ site.baseurl }}{% asset_path 'tennis/tennisadvantage-tall.png' %}"}
         .center-right
           %h1 GREGSON'S TENNIS ADVANTAGE
           %hr.thick
@@ -73,7 +85,13 @@ layout: default
             restaraunt, a local boutique, a club, or perhaps you’re interested in entering the world of
             e-commerce, I can help you communicate your value effectively.
       %li.block
-        %img.center-left{src:"{{ site.baseurl }}{% asset_path 'bohokitty/bohokitty-tall.png' %}"}
+        .portfolio-img.center-left
+          %ul.browser-dots
+            %li.red.dots
+            %li.yellow.dots
+            %li.green.dots
+            %li.tab BohoKitty
+          %img{src:"{{ site.baseurl }}{% asset_path 'bohokitty/bohokitty-tall.png' %}"}
         .center-right
           %h1 BOHOKITTY
           %hr.thick
@@ -82,7 +100,13 @@ layout: default
             restaraunt, a local boutique, a club, or perhaps you’re interested in entering the world of
             e-commerce, I can help you communicate your value effectively.
       %li.block
-        %img.center-left{src:"{{ site.baseurl }}{% asset_path 'runfurman/runfurman-tall.png' %}"}
+        .portfolio-img.center-left
+          %ul.browser-dots
+            %li.red.dots
+            %li.yellow.dots
+            %li.green.dots
+            %li.tab RunFurman
+          %img{src:"{{ site.baseurl }}{% asset_path 'runfurman/runfurman-tall.png' %}"}
         .center-right
           %h1 RUNFURMAN
           %hr.thick

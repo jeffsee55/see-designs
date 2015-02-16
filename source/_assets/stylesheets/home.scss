@@ -56,11 +56,12 @@
 
 #welcome {
   position: relative;
+  overflow: hidden;
   .overlay {
     position: absolute;
     top: 0; right: 0; bottom: 0; left: 0;
     z-index: 20;
-    @include filter(blur(1px));
+    @include filter(blur(2px));
   }
   .center {
     z-index: 30;
@@ -78,7 +79,8 @@
 }
 
 #tagline {
-  background: $base-accent-color;
+  overflow: hidden;
+  background-color: $base-accent-color;
 }
 
 #slide {

@@ -3,7 +3,47 @@
 .banner ul li, .feature-banner ul li { float: left; }
 
 .banner ul li {
-  img {
+  .portfolio-img {
+    $browser-bg: #d9d9d9;
+    padding: 30px 6px 0 6px;
+    background: $browser-bg;
+    border-radius: 10px;
     max-width: 55%;
+    position: relative;
+    .browser-dots {
+      position: absolute;
+      top: 9px;
+      left: 0;
+      .dots {
+        display: inline-block;
+        margin-left: 10px;
+        border-radius: 50%;
+        height: 14px;
+        width: 14px;
+      }
+      .red {
+        background: #e66464;
+      }
+      .yellow {
+        background: #cbcd56;
+      }
+      .green {
+        background: #5bcd79;
+      }
+      .tab {
+        border-bottom: 20px solid lighten($browser-bg, 5);
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        z-index: 0;
+        height: 0;
+        font-size: 0.75em;
+        text-align: center;
+        color: $dark-gray;
+        @include border-top-radius(5px);
+        padding: 0 10px;
+        height: 20px;
+        margin-left: 20px;
+      }
+    }
   }
 }
